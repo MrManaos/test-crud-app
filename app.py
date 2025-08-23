@@ -16,7 +16,7 @@ def conectar():
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'hola ricky, te veo!'
 
 @app.route("/api/modificar", methods=["POST"])
 def modificar_producto():
@@ -50,4 +50,5 @@ def eliminar_producto():
     cursor.close()
     conn.close()
     return jsonify(resultados)
+
 
